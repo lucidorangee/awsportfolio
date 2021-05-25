@@ -340,7 +340,9 @@ class App extends React.Component{
       
       return(
         <div className = 'container'>
-          <span id="dim"></span>
+          <span id="dim">
+            <img src={chessscene}></img>
+          </span>
           <div class = "bshadow">
 
           </div>
