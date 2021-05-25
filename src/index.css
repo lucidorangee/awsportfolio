@@ -100,7 +100,7 @@ html {
 .detail_content {
   position: absolute;
   top: 208px;
-  width: 1%;
+  width: 100%;
   opacity: 100%;
   z-index: 2;
 }
