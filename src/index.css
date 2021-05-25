@@ -131,3 +131,8 @@ html {
   opacity: 60%;
   transition: 2s;
 }
+
+.dim {
+  width: 800px;
+  height: 800px;
+}
