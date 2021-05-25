@@ -132,7 +132,7 @@ html {
   transition: 2s;
 }
 
-.dim {
+span#dim {
   width: 800px;
   height: 800px;
 }
