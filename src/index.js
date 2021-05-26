@@ -63,7 +63,7 @@ class Item extends React.Component{
         inDesc = true;
         
         document.getElementById("dim").innerHTML = '<div class = "detail_content"><img src=' + this.state.bonus_image + ' alt="Guitar!"/></div><div class = "ashadow"></div><div class = "bshadow">hi</div>';
-
+        
       }
     }
     else if(inDesc && this.state.ypos >= 200) 
@@ -306,8 +306,6 @@ class Menu extends Item{
   }
 
   render(){
-
-    
     let text;
     if(this.state.ypos < 200) {
       document.getElementById("description").innerHTML = this.state.desc;
@@ -340,9 +338,7 @@ class App extends React.Component{
       
       return(
         <div className = 'container'>
-          <span id="dim">
-            <img src={chessscene}></img>
-          </span>
+          <span id="dim"></span>
           <div class = "bshadow">
 
           </div>
