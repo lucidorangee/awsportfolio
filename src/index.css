@@ -112,7 +112,7 @@ html {
   left: 0;
   height: 100%;
   width: 100%;
-  opacity: 60%;
+  opacity: 0.6;
   background-color: #555;
 }
 
@@ -123,11 +123,11 @@ html {
   left: 0px;
   height: 100%;
   width: 100%;
-  opacity: 0%;
+  opacity: 0;
   background-color: #555;
 }
 
 .bshadow.active {
-  opacity: 60%;
+  opacity: 0.6;
   transition: 2s;
 }
