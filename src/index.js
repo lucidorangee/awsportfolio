@@ -7,9 +7,11 @@ import githubicon from './github_icon.png';
 import menuicon from './menu_icon.png';
 import chessicon from './chess_icon.png';
 import guitaricon from './guitar_icon.png';
+import djangoicon from './django_icon.png';
 import guitarscene from './guitarhelper_scene.PNG';
 import tetrisscene from './tetris_scene.png';
 import chessscene from './chess_scene.png';
+import djangoscene from './django_scene.png';
 
 import shelf from './shelf.png';
 
@@ -135,6 +137,17 @@ class Tetris extends Item{
     this.state.ypos = 270;
     this.state.desc = '<h1>Tetris Project - built with C++ and SFML</h1>When I was in grade 11, I wanted to attempt creating tetris in C++, <br>and I\'ve made a video on "speedrunning" to create one in C++!<br>Sadly, I do not have the project in my repository because I did not know how to use github back then, <br>but I have edited recording of it :(<br><a href="https://youtu.be/7_1XTFHXqcI">Click here if you want to check it out~!</a>';
     this.state.bonus_image = tetrisscene;
+  }
+}
+
+class DjangoPiece extends Item{
+  constructor(props){
+    super(props);
+    this.state.xpos = 751;
+    this.state.ypos = 500;
+    this.state.desc = '<h1>Django Project</h1>A simple app that I created to learn about django project! It has /admin, /create, /about, and more that I use to experiment with django!<br><a href="https://github.com/lucidorangee/awsportfolio">Here is the github link!</a>';
+    this.state.display_image = djangoicon;
+    this.state.bonus_image = djangoscene;
   }
 }
 
@@ -355,6 +368,7 @@ class App extends React.Component{
           }}></img>
             <Menu />
             <Tetris />
+            <DjangoPiece />
             <GithubPiece />
             <ChessPiece />
             <GuitarPiece />
