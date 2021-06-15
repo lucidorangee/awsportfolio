@@ -1,5 +1,7 @@
 import React, { useCallback } from 'react';
 import ReactDOM, { render } from 'react-dom';
+import { Canvas } from "react-three-fiber";
+import { OrbitControls, useGLTF } from "@react-three/drei"
 import './index.css';
 
 import tetris from './Tetris_T.png';
@@ -372,6 +374,7 @@ class App extends React.Component{
             <GithubPiece />
             <ChessPiece />
             <GuitarPiece />
+
             <hr id="divide"></hr>
           </div>
           
